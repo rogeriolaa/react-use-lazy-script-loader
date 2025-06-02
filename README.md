@@ -92,6 +92,30 @@ An object containing the following properties:
 -   **Server-Side Rendering (SSR) Compatibility:** Gracefully handles being run in non-browser environments (though script loading will only occur client-side).
 -   **Re-renders & URL Changes:** Handles re-renders and changes to the `scriptUrl` prop correctly, loading new scripts and cleaning up old ones as needed.
 
+## Running the Example App
+
+This repository includes an example application built with Vite, React, and Tailwind CSS to demonstrate the usage of the `useLazyScriptLoader` hook.
+
+To run the example app:
+
+1.  **Navigate to the example directory:**
+    ```bash
+    cd example
+    ```
+
+2.  **Install dependencies:**
+    This will install dependencies for the example app itself and also link the local `@n0n3br/react-use-lazy-script-loader` package from the root of the repository.
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  Open your browser and navigate to the URL provided by Vite (usually `http://localhost:5173` or a similar port).
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
