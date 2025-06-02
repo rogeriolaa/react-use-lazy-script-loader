@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react';
 import useLazyScriptLoader from '@n0n3br/react-use-lazy-script-loader';
+import { useEffect, useRef } from 'react';
 
 function App() {
-  const SCRIPT_URL = 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js';
+  const SCRIPT_URL = 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js';
   const { isLoading, isLoaded, error } = useLazyScriptLoader(SCRIPT_URL);
   const chartInstanceRef = useRef(null);
 
