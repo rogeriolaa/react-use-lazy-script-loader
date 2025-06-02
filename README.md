@@ -116,6 +116,32 @@ To run the example app:
 
 4.  Open your browser and navigate to the URL provided by Vite (usually `http://localhost:5173` or a similar port).
 
+### Deploying the Example to GitHub Pages
+
+The example application is pre-configured for easy deployment to GitHub Pages.
+
+1.  **Customize Configuration (First-Time Setup):**
+    *   Open `example/package.json`. Update the `homepage` field to reflect your GitHub Pages URL. For example:
+        ```json
+        "homepage": "https://YOUR_USERNAME.github.io/YOUR_REPOSITORY_NAME/"
+        ```
+    *   Open `example/vite.config.js`. Update the `base` option to match your repository name:
+        ```javascript
+        export default defineConfig({
+          base: '/YOUR_REPOSITORY_NAME/', 
+          // ... other config
+        });
+        ```
+    These steps ensure that the application's assets are loaded correctly when deployed.
+
+2.  **Deploy:**
+    Navigate to the example directory and run the deploy script:
+    ```bash
+    cd example
+    npm run deploy
+    ```
+    This will build the application and push the contents of the `example/dist` folder to the `gh-pages` branch of your repository. After a few moments, your example app should be live at the URL specified in your `homepage` field.
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
