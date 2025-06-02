@@ -1,5 +1,5 @@
-import useLazyScriptLoader from '@n0n3br/react-use-lazy-script-loader';
 import { useEffect, useRef, useState } from 'react'; // Added useState
+import useLazyScriptLoader from '../../src/index';
 
 function App() {
   const [loadScript, setLoadScript] = useState(false);
