@@ -13,7 +13,7 @@
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "clean": "rm -rf dist",
+    "clean": "rimraf dist",
     "prepublishOnly": "npm run clean && npm run build"
   },
   "keywords": [
@@ -46,6 +46,7 @@
     "jest-environment-jsdom": "^30.0.0-beta.3",
     "react": "^18.0.0",
     "react-test-renderer": "^18.3.1",
+    "rimraf": "^6.0.1",
     "ts-jest": "^29.3.4",
     "typescript": "^5.8.3"
   }
