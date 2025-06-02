@@ -1,9 +1,9 @@
+import React, { useState, useEffect, useRef } from 'react'; // Added useState
 import useLazyScriptLoader from '@n0n3br/react-use-lazy-script-loader';
-import React, { useState, useEffect, useRef } from 'react';
 
 function App() {
   const [loadScript, setLoadScript] = useState(false);
-  const SCRIPT_URL = 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js';
+  const SCRIPT_URL = 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js';
   const { isLoading, isLoaded, error } = useLazyScriptLoader(loadScript ? SCRIPT_URL : null);
   const barChartRef = useRef(null);
   const doughnutChartRef = useRef(null);

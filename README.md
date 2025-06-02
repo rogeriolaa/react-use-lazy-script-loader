@@ -2,6 +2,12 @@
 
 A React hook for easily loading external JavaScript files asynchronously and managing their loading state.
 
+<!-- 
+TODO: Replace the URL below with your actual GitHub Actions status badge URL 
+after the workflow has run at least once.
+-->
+[![CI Tests Status](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME/actions/workflows/ci-tests.yml/badge.svg)](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME/actions/workflows/ci-tests.yml)
+
 ## Installation
 
 You can install the package using npm or yarn:
