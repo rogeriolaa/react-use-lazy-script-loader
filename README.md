@@ -115,6 +115,7 @@ To run the example app:
     ```
 
 4.  Open your browser and navigate to the URL provided by Vite (usually `http://localhost:5173` or a similar port).
+    Once the app is running, click the "Load Chart.js & Display Charts" button to trigger the script loading and see the charts.
 
 ### Deploying the Example to GitHub Pages
 
